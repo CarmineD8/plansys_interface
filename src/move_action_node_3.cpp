@@ -44,11 +44,11 @@ private:
 
     double goal_x, goal_y;
     if (wp_to_navigate == "bathroom") {
-      goal_x = 10.0;
-      goal_y = 5.0;
+      goal_x = -5.0;
+      goal_y = 2.0;
     } else if (wp_to_navigate == "bedroom") {
-      goal_x = 5.0;
-      goal_y = 6.0;
+      goal_x = 4.0;
+      goal_y = -3.0;
     } else {
       RCLCPP_ERROR(get_logger(), "Unknown waypoint: %s", wp_to_navigate.c_str());
       finish(false, 0.0, "Unknown waypoint");
